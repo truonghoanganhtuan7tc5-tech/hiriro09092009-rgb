@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolliebear - Giao Hàng Tận Nơi & Thực Đơn Thơm Ngon</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- TOP UTILITY BAR -->
+    <div class="utility-bar">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span>Chào mừng bạn đến với Jolliebear!</span>
+            </div>
+            <div class="utility-right">
+                <div class="language-selector">
+                    <span class="lang-item active" id="lang-vi">
+                        <span class="flag-icon vi-flag"></span> VN
+                    </span>
+                    <span class="lang-item" id="lang-en">
+                        <span class="flag-icon en-flag"></span> EN
+                    </span>
+                </div>
+                <a href="#login" class="auth-btn">
+                    <i class="fa-regular fa-user"></i>
+                    <span>ĐĂNG KÝ / ĐĂNG NHẬP</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER & NAVIGATION -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <a href="index.html" class="logo-area">
+                <div class="logo-circle">
+                    <i class="fa-solid fa-paw logo-icon"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-brand">Jolliebear</span>
+                    <span class="logo-slogan">I'm lovin' it</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">VỀ JOLLIEBEAR</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">THỰC ĐƠN</a></li>
+                    <li class="nav-item"><a href="#promotions" class="nav-link">KHUYẾN MÃI</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">DỊCH VỤ</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link">TIN TỨC</a></li>
+                    <li class="nav-item"><a href="#stores" class="nav-link">CỬA HÀNG</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">LIÊN HỆ</a></li>
+                    <li class="nav-item"><a href="#jobs" class="nav-link">TUYỂN DỤNG</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN HERO CAROUSEL -->
+    <section class="hero-carousel" id="home">
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <!-- Slide 1 -->
+                <li class="carousel-slide current-slide">
+                    <div class="slide-content bg-gradient-1">
+                        <div class="slide-inner">
+                            <div class="slide-text">
+                                <span class="badge">BÁN CHẠY NHẤT</span>
+                                <h2>Gà Giòn Vui Vẻ</h2>
+                                <p>Giòn rụm từng miếng, thơm ngon đậm đà chuẩn vị Jolliebear. Thử ngay hôm nay!</p>
+                                <div class="price-tag">
+                                    <span class="price">35.000đ</span> <span class="unit">/ Phần</span>
+                                </div>
+                                <a href="#menu" class="btn btn-primary">Đặt hàng ngay <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="slide-graphic">
+                                <div class="food-plate chicken-plate">
+                                    <span class="graphic-shadow"></span>
+                                    <i class="fa-solid fa-drumstick-bite graphic-food-icon animate-float"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Slide 2 -->
+                <li class="carousel-slide">
+                    <div class="slide-content bg-gradient-2">
+                        <div class="slide-inner">
+                            <div class="slide-text">
+                                <span class="badge">MỚI RA MẮT</span>
+                                <h2>Mỳ Ý Sốt Bò Bằm</h2>
+                                <p>Sốt bò bằm chua ngọt đậm đà hòa quyện cùng phô mai bào béo ngậy khó cưỡng.</p>
+                                <div class="price-tag">
+                                    <span class="price">145.000đ</span> <span class="old-price">180.000đ</span>
+                                </div>
+                                <a href="#menu" class="btn btn-primary">Khám phá ngay <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="slide-graphic">
+                                <div class="food-plate spaghetti-plate">
+                                    <span class="graphic-shadow"></span>
+                                    <i class="fa-solid fa-bowl-food graphic-food-icon animate-float"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Slide 3 -->
+                <li class="carousel-slide">
+                    <div class="slide-content bg-gradient-3">
+                        <div class="slide-inner">
+                            <div class="slide-text">
+                                <span class="badge">ƯU ĐÃI KHỦNG</span>
+                                <h2>Combo Gà Sốt Cay</h2>
+                                <p>Vị cay nồng nàn, ngọt dịu đặc trưng thấm đượm trong từng thớ thịt gà mọng nước.</p>
+                                <div class="price-tag">
+                                    <span class="price">145.000đ</span> <span class="old-price">178.000đ</span>
+                                </div>
+                                <a href="#menu" class="btn btn-primary">Nhận ưu đãi <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="slide-graphic">
+                                <div class="food-plate spicy-plate">
+                                    <span class="graphic-shadow"></span>
+                                    <i class="fa-solid fa-fire graphic-food-icon animate-float"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-nav">
+            <button class="carousel-indicator current-slide-indicator" aria-label="Slide 1"></button>
+            <button class="carousel-indicator" aria-label="Slide 2"></button>
+            <button class="carousel-indicator" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- SERVICE SELECTOR & SEARCH BAR -->
+    <section class="order-section">
+        <div class="order-container">
+            <!-- Toggle buttons -->
+            <div class="order-toggle-wrapper">
+                <button class="toggle-btn active" id="delivery-toggle">
+                    <i class="fa-solid fa-motorcycle"></i> GIAO HÀNG TẬN NƠI
+                </button>
+                <button class="toggle-btn" id="pickup-toggle">
+                    <i class="fa-solid fa-store"></i> ĐẶT ĐẾN LẤY
+                </button>
+            </div>
+
+            <!-- Address Input Box -->
+            <div class="address-search-box">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-location-dot input-loc-icon"></i>
+                    <input type="text" id="address-input" placeholder="Nhập địa chỉ giao hàng của bạn..." aria-label="Nhập địa chỉ giao hàng">
+                    <button class="search-btn" aria-label="Tìm kiếm địa chỉ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- "ĂN GÌ HÔM NAY" FEATURED SECTION -->
+    <section class="featured-section" id="menu">
+        <div class="featured-container">
+            <!-- Left Promo Card -->
+            <div class="promo-brand-card">
+                <div class="promo-content">
+                    <div class="brand-mascot-wrapper">
+                        <i class="fa-solid fa-paw mascot-icon"></i>
+                    </div>
+                    <h2>ĂN GÌ HÔM NAY</h2>
+                    <p>Thực đơn Jolliebear đa dạng và phong phú, có rất nhiều sự lựa chọn cho bạn, gia đình và bạn bè.</p>
+                </div>
+            </div>
+
+            <!-- Food Category Cards (Wood Textured Backgrounds) -->
+            <div class="category-cards-grid">
+                <!-- Card 1: Gà Giòn -->
+                <div class="category-card wood-card">
+                    <div class="card-image-wrapper">
+                        <div class="food-mock-img chicken-mock">
+                            <i class="fa-solid fa-drumstick-bite food-mock-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Gà Giòn Vui Vẻ</h3>
+                        <p>Thơm giòn rụm bên ngoài, mọng nước bên trong.</p>
+                        <a href="#menu" class="card-link">Xem thực đơn <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Gà Sốt Cay -->
+                <div class="category-card wood-card">
+                    <div class="card-image-wrapper">
+                        <div class="food-mock-img spicy-mock">
+                            <i class="fa-solid fa-fire-flame-curved food-mock-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Gà Sốt Cay & Ngọt</h3>
+                        <p>Sốt đặc trưng thấm sâu cay tê kích thích vị giác.</p>
+                        <a href="#menu" class="card-link">Xem thực đơn <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Mỳ Ý -->
+                <div class="category-card wood-card">
+                    <div class="card-image-wrapper">
+                        <div class="food-mock-img spaghetti-mock">
+                            <i class="fa-solid fa-bowl-food food-mock-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Mỳ Ý Sốt Bò Bằm</h3>
+                        <p>Mỳ dai mềm kết hợp sốt thịt băm đậm đà.</p>
+                        <a href="#menu" class="card-link">Xem thực đơn <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Kem & Tráng Miệng -->
+                <div class="category-card wood-card">
+                    <div class="card-image-wrapper">
+                        <div class="food-mock-img dessert-mock">
+                            <i class="fa-solid fa-ice-cream food-mock-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Tráng Miệng Ngọt Ngào</h3>
+                        <p>Kem tươi mát lạnh, giải nhiệt ngày hè.</p>
+                        <a href="#menu" class="card-link">Xem thực đơn <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-paw"></i> Jolliebear
+                    </div>
+                    <p class="footer-desc">Mang hương vị ngập tràn niềm vui tới mọi gia đình Việt Nam. Chất lượng hàng đầu, phục vụ tận tâm.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>THỰC ĐƠN</h4>
+                    <ul>
+                        <li><a href="#menu">Gà Giòn Vui Vẻ</a></li>
+                        <li><a href="#menu">Gà Sốt Cay</a></li>
+                        <li><a href="#menu">Mỳ Ý Đặc Biệt</a></li>
+                        <li><a href="#menu">Kem & Tráng Miệng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>LIÊN KẾT NHANH</h4>
+                    <ul>
+                        <li><a href="#about">Về Jolliebear</a></li>
+                        <li><a href="#promotions">Tin Khuyến Mãi</a></li>
+                        <li><a href="#stores">Hệ Thống Cửa Hàng</a></li>
+                        <li><a href="#jobs">Cơ Hội Việc Làm</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>LIÊN HỆ</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> Hotline: 1900 8080</li>
+                        <li><i class="fa-solid fa-envelope"></i> Email: feedback@jolliebear.com.vn</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Trụ sở: Quận 1, TP. Hồ Chí Minh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jolliebear Việt Nam. Tất cả quyền được bảo lưu.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIE CONSENT BANNER -->
+    <div class="cookie-consent-banner" id="cookie-banner">
+        <div class="cookie-container">
+            <div class="cookie-text">
+                Trang web này yêu cầu sử dụng cookie để cung cấp đầy đủ tất cả các tính năng. Để biết thêm thông tin về dữ liệu có trong cookie, vui lòng xem trang <a href="#" class="cookie-policy-link">Chính sách Cookie</a> của chúng tôi. Để chấp nhận cookie từ trang web này, vui lòng nhấp vào nút Chấp nhận Cookie bên dưới.
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn btn-settings" id="cookie-settings">TÙY CHỈNH CÀI ĐẶT COOKIE</button>
+                <button class="cookie-btn btn-accept" id="cookie-accept">CHẤP NHẬN COOKIE</button>
+                <button class="cookie-btn btn-decline" id="cookie-decline">TỪ CHỐI</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
